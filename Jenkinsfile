@@ -15,7 +15,9 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying...'
-                sh 'cat example.txt'
+                sh 'whoami'
+                sh 'ls -la'
+                // sh 'cat example.txt'
             }
         }
     }
